@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# The React Find Movie app 
+13 January 2023
+The deployed web app is on [link](https://steady-ganache-1fe537.netlify.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## OBJECTIVE
+The web-app is on React.js. It uses the [Fake API](https://fakestoreapi.com/docs) to fill in content with the real-like E-commerce content. The app uses Bootstrap for styling and creating **Layouts** **Popovers** and Axios as the HTTP-client.
 
-## Available Scripts
+## BACKGROUND
+The E-Coomerce on React web-app creates the Template for the commercial web-app. The Fake API helps to create the inner logic of the commercial web-app: categories of goods, all goods on the first page. Also there is the possibilty to move the goods to the **Cart**.
 
-In the project directory, you can run:
 
-### `npm start`
+## TECHNICAL DESIGN
+The app uses:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React;
+- React Router;
+- Bootstrap;
+- Fake API;
+- Axios;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+The app uses **{useContext}** and **{useReducer}** - the React Hooks for creating globalContext and keeping and using the state of the **ADD** and **REMOVE** in the **Cart**.
+Axios is used as the HTTP-client.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## CAVEATS
+The web-app uses the FakeAPI for the content but in the real-world app its better to use the content in JSON file to escape the **key prop** problem.
