@@ -1,4 +1,4 @@
-# The React Find Movie app 
+# The React E-Commerce web app 
 13 January 2023
 The deployed web app is on [link](https://steady-ganache-1fe537.netlify.app)
 
